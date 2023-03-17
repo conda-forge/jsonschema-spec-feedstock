@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: jsonschema-spec
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/j/jsonschema-spec/jsonschema_spec-{{ version }}.tar.gz
-  sha256: 8d8db7c255e524fab1016a952a9143e5b6e3c074f4ed25d1878f8e97806caec0
+  sha256: 824c743197bbe2104fcc6dce114a4082bf7f7efdebf16683510cb0ec6d8d53d0
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     # sync from poetry-generated setup.py rather than pyproject.toml; use typing_extensions
     - python >=3.6
     - pyyaml >=5.1
-    - jsonschema >=4.0.0,<5.0.0
+    - jsonschema >=4.0.0,<4.18.0
     - pathable >=0.4.1,<0.5.0
     - typing_extensions >=4.3.0,<5.0.0
 
