@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: jsonschema-spec
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/j/jsonschema-spec/jsonschema_spec-{{ version }}.tar.gz
-  sha256: 824c743197bbe2104fcc6dce114a4082bf7f7efdebf16683510cb0ec6d8d53d0
+  sha256: 57c5a029f9b5aa2e49f0b5fe3c3fbbb735d815a35783635a537b10782c59168c
 
 build:
   noarch: python
