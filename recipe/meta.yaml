@@ -10,20 +10,21 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - poetry-core >=1.0.0
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
     # sync from poetry-generated setup.py rather than pyproject.toml; use typing_extensions
-    - python >=3.6
-    - pyyaml >=5.1
-    - jsonschema >=4.0.0,<4.18.0
     - pathable >=0.4.1,<0.5.0
+    - jsonschema-specifications >=2023.3.4,<2024
+    - python >=3.8
+    - pyyaml >=5.1
+    - referencing >=0.24.4,<1
     - typing_extensions >=4.3.0,<5.0.0
 
 test:
