@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     # sync from poetry-generated setup.py rather than pyproject.toml; use typing_extensions
-    - jsonschema-specifications >=2023.5.1,<2024
     - pathable >=0.4.1,<0.5.0
     - python >=3.8
     - pyyaml >=5.1
